@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1hwei.github.io</id>
     <title>Gridea</title>
-    <updated>2019-07-21T04:17:57.747Z</updated>
+    <updated>2019-07-21T04:18:54.736Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1hwei.github.io"/>
     <link rel="self" href="https://1hwei.github.io/atom.xml"/>
@@ -10,6 +10,43 @@
     <logo>https://1hwei.github.io/images/avatar.png</logo>
     <icon>https://1hwei.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[给 i 太湖]]></title>
+        <id>https://1hwei.github.io/post/gei-i-tai-hu</id>
+        <link href="https://1hwei.github.io/post/gei-i-tai-hu">
+        </link>
+        <updated>2019-07-21T04:18:31.000Z</updated>
+        <content type="html"><![CDATA[<p>苦恼<br>
+你有没有为了学git的经历一而再再而三查看别人的文档还是学不会的经历，只是它、因为你没有使用git的需要，更何况繁琐的命令行让人头疼，什么缓存区，分支，HEAD，合并分支这些让人头疼的东西敬而远之，有一款github官方的应用程序就是为了小白而生的，这篇教程里不会介绍任何一个命令但是看完之后你能轻松使用git。</p>
+<p>git介绍<br>
+什么是git？间接的说git是分布式版本控制工具，这你或许看过很多遍了，但是我还是想在这里重复一遍，git可以在一下情境中很有用：</p>
+<p>你在写一篇很长的论文，比如说论文的开头介绍， 相关的研究，论述，建议，总结。很显然这些都是不同部分，各个部分不相关联，但是总结起来就是你整个文章，但是论文嘛，总是改了又该，很烦人，因为会生成很多的文件。所以git可以帮你把不同的部分合并在一起但是不会生成任何多余的文件。你可以迁出到任何你提交后的状态。<br>
+其次就是软件开发，比如开发网页。有的人做前端，html，css，js调用一把梭，其他人很精通服务器，两者的业务分工明确，所以很适合分工合作，最后把两者的业务关联一下就可以看到网站了。这时候git也起到了相当重要的作用，因为是分工合作。</p>
+<p>Github Desktop<br>
+这是Github的官方git软件，其实现在很多IDE都自带这种版本控制软件，学会了这个其他的版本控制软件上手就很简单了，这篇文章我只会分享自己常用的一些操作。<br>
+界面介绍<br>
+如果你打开这个软件后（下载地址在上方的超链接中），会发现应该如下所示。 左边的是可以切换添加进来的仓库，再也不需要cd来cd去了，白色框内是改变提醒，下面是提交修改。所以整个工作流程是有修改直接commit就行了。</p>
+<p>请注意你可以从左下角看到我的头像这是以为我已经安装了git，这篇文章侧重介绍Github Desktop的使用，软件的介绍而不是安装工具，所以如果你还没有安装git，请移步廖老师的安装教程<br>
+创建一个本地仓库<br>
+好了现在我们直接在我的github上面克隆一个仓库并且在桌面打开，这个仓库已经初始化好了，所以不需要任何命令</p>
+<p>Github Desktop果然是亲儿子， 在网站下载会自动导入到Github Desktop中</p>
+<p>那如果没有自动导入怎么办内，假如你的learngit文件夹在桌面上，可以添加本地仓库，这是一样的</p>
+<p>提交改变<br>
+好了咱们已经有了本地仓库了，那么现在当然是什么改变都没有，也不需要提交什么。可以看到我的learngit中有一个learn2.txt文件，我们就做一些修改吧！<br>
+在其中添加一行learning git is easy.看看有什么变化吧！</p>
+<p>看到了吧，已经显示了我们在第4，5行新添加了改变(其中第4行为空白行), 那现在就可以在summary写上简短的改变描述，比如我写的是add learn git is easy之后点击commit to master就可以了。</p>
+<p>看到了吧，现在显示本地没有改变，但是上面push origin显示了1，代表的是我们与远程的github不同步，本地有一个更新，就是我们新加的2行，但是github并没有更新，推送远程分支我之后会讲。<br>
+推送到远程仓库<br>
+平常我们都会看到的别人github上面优秀的项目，github是一个远程仓库，你可以把它当作展示用的，或者别人可以克隆你的仓库。所以如果你想看到自己本地仓库在github上面展示出来每次就得push出来，就像是我们上面commit后本地比远程多了一次更新，需要更新远程仓库push本地修改。</p>
+<p>首先你得有自己的github账号，这是为了我们的远程推送到github上的<br>
+在自己的github desktop登陆自己的github账号密码</p>
+<p>登陆后就可以推送啦， 点击push origin就可以啦～ 你可以登陆github查看learngit仓库，看看其中的变化</p>
+<p>作者：Pan231<br>
+链接：https://www.jianshu.com/p/06a960d991aa<br>
+来源：简书<br>
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[te rte r]]></title>
         <id>https://1hwei.github.io/post/te-rte-r</id>
