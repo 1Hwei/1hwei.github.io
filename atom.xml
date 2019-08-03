@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://1hwei.github.io/</id>
     <title>Gridea</title>
-    <updated>2019-08-03T13:43:01.049Z</updated>
+    <updated>2019-08-03T13:44:46.104Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://1hwei.github.io/"/>
     <link rel="self" href="http://1hwei.github.io//atom.xml"/>
@@ -34,16 +34,6 @@
 <p>由于工程是高版本的Xcode建立的，在使用高版本的Xcode打开时会出现编译不了工程。</p>
 <p>解决方法：</p>
 <p>鼠标右击.xcodeproj文件 —》显示包内容 —》打开project.pbxproj文件，比较以前的版本号进行修改（比如：把objecVersion=50（xcode10）修改objecVersion=48即可打开工程）。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[第一篇开启]]></title>
-        <id>http://1hwei.github.io//post/di-yi-pian-kai-qi</id>
-        <link href="http://1hwei.github.io//post/di-yi-pian-kai-qi">
-        </link>
-        <updated>2019-07-20T15:14:54.000Z</updated>
-        <content type="html"><![CDATA[<!-- more -->
-<p>hello ！！未公开事发时过来看见了关机了阿里冠军联赛冠军辣口水鸡是老顾客伤筋动骨快乐就是看啦赶紧来看帅哥嘎嘎阿是根深蒂固山高水低发光时代</p>
 ]]></content>
     </entry>
     <entry>
