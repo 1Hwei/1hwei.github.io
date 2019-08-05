@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1hwei.github.io/</id>
     <title>Gridea</title>
-    <updated>2019-08-05T13:10:41.411Z</updated>
+    <updated>2019-08-05T14:08:33.215Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1hwei.github.io/"/>
     <link rel="self" href="https://1hwei.github.io//atom.xml"/>
@@ -51,10 +51,10 @@
         </link>
         <updated>2019-07-29T08:06:22.000Z</updated>
         <content type="html"><![CDATA[<p>解决办法<br>
-选中控制器，右边面板的Builds for 选择 iOS 9.0 and Later<br>
-<img src="https://1hwei.github.io//post-images/1564387762657.png" alt=""><br>
-取消使用 Use Safe Area Layout Guides 选项，去针对不同的设备写代码适配。<br>
-<img src="https://1hwei.github.io//post-images/1564387788284.png" alt=""></p>
+选中控制器，右边面板的Builds for 选择 iOS 9.0 and Later</p>
+<p><img src="https://1hwei.github.io//post-images/1564387762657.png" alt="1"></p>
+<p>取消使用 Use Safe Area Layout Guides 选项，去针对不同的设备写代码适配。</p>
+<p><img src="https://1hwei.github.io//post-images/1564387788284.png" alt="2"></p>
 ]]></content>
     </entry>
     <entry>
