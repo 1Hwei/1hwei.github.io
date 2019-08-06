@@ -1,37 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>/Users/hwei/Documents/Gridea/output</id>
+    <id>https://1hwei.github.io/</id>
     <title>Gridea</title>
-    <updated>2019-08-06T01:54:39.195Z</updated>
+    <updated>2019-08-06T01:55:30.948Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="/Users/hwei/Documents/Gridea/output"/>
-    <link rel="self" href="/Users/hwei/Documents/Gridea/output/atom.xml"/>
+    <link rel="alternate" href="https://1hwei.github.io/"/>
+    <link rel="self" href="https://1hwei.github.io//atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>/Users/hwei/Documents/Gridea/output/images/avatar.png</logo>
-    <icon>/Users/hwei/Documents/Gridea/output/favicon.ico</icon>
+    <logo>https://1hwei.github.io//images/avatar.png</logo>
+    <icon>https://1hwei.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Gridea</rights>
     <entry>
         <title type="html"><![CDATA[<小知识>hexo搭建的博客如何发博客]]></title>
-        <id>/Users/hwei/Documents/Gridea/output/post/lessxiao-zhi-shi-greaterhexo-da-jian-de-bo-ke-ru-he-fa-bo-ke/index.html</id>
-        <link href="/Users/hwei/Documents/Gridea/output/post/lessxiao-zhi-shi-greaterhexo-da-jian-de-bo-ke-ru-he-fa-bo-ke/index.html">
-        </link>
-        <updated>2019-08-06T01:47:51.000Z</updated>
-        <content type="html"><![CDATA[<p>在hexo根目录下&gt;source/posts下&gt;新建xxx.md文件</p>
-<pre><code>、、、
-标题
-、、、
-
-正文
-</code></pre>
-<p>部署，上传</p>
-<pre><code>hexo g -d
-</code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[<小知识>hexo搭建的博客如何发博客]]></title>
-        <id>/Users/hwei/Documents/Gridea/output/post/xiaozhishi01/index.html</id>
-        <link href="/Users/hwei/Documents/Gridea/output/post/xiaozhishi01/index.html">
+        <id>https://1hwei.github.io//post/xiaozhishi01</id>
+        <link href="https://1hwei.github.io//post/xiaozhishi01">
         </link>
         <updated>2019-08-06T01:47:51.000Z</updated>
         <content type="html"><![CDATA[<p>在hexo根目录下&gt;source/posts下&gt;新建xxx.md文件</p>
@@ -48,8 +30,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[<待办事件>如何在博客中加载live2d动漫]]></title>
-        <id>/Users/hwei/Documents/Gridea/output/post/lessdai-ban-shi-jian-greaterru-he-zai-bo-ke-zhong-jia-zai-live2d-dong-man/index.html</id>
-        <link href="/Users/hwei/Documents/Gridea/output/post/lessdai-ban-shi-jian-greaterru-he-zai-bo-ke-zhong-jia-zai-live2d-dong-man/index.html">
+        <id>https://1hwei.github.io//post/lessdai-ban-shi-jian-greaterru-he-zai-bo-ke-zhong-jia-zai-live2d-dong-man</id>
+        <link href="https://1hwei.github.io//post/lessdai-ban-shi-jian-greaterru-he-zai-bo-ke-zhong-jia-zai-live2d-dong-man">
         </link>
         <updated>2019-08-05T17:33:39.000Z</updated>
         <content type="html"><![CDATA[<p>https://xiazeyu.github.io/</p>
@@ -57,25 +39,25 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[问题解决：Module compiled with Swift 4.0.3 cannot be imported by the Swift 4.2.1]]></title>
-        <id>/Users/hwei/Documents/Gridea/output/post/wen-ti-jie-jue-module-compiled-with-swift-403-cannot-be-imported-by-the-swift-421/index.html</id>
-        <link href="/Users/hwei/Documents/Gridea/output/post/wen-ti-jie-jue-module-compiled-with-swift-403-cannot-be-imported-by-the-swift-421/index.html">
+        <id>https://1hwei.github.io//post/wen-ti-jie-jue-module-compiled-with-swift-403-cannot-be-imported-by-the-swift-421</id>
+        <link href="https://1hwei.github.io//post/wen-ti-jie-jue-module-compiled-with-swift-403-cannot-be-imported-by-the-swift-421">
         </link>
         <updated>2019-08-04T16:01:04.000Z</updated>
         <content type="html"><![CDATA[<p>打开项目报错Module compiled with Swift 4.0.3 cannot be imported by the Swift 4.2.1<br>
-<img src="/Users/hwei/Documents/Gridea/output/post-images/1564934548491.png" alt=""><br>
+<img src="https://1hwei.github.io//post-images/1564934548491.png" alt=""><br>
 #解决方法：<br>
 切换回swift4.2.4 版本<br>
 1.下载需要的swift4.2.4 <a href="">下载</a>https://swift.org/download/#releases,<br>
-<img src="/Users/hwei/Documents/Gridea/output/post-images/1564934856433.png" alt=""><br>
+<img src="https://1hwei.github.io//post-images/1564934856433.png" alt=""><br>
 2.安装<br>
-3.选中新下载的swift版本<img src="/Users/hwei/Documents/Gridea/output/post-images/1564935026303.png" alt="">或者在Xcode偏好设置里选择<br>
-<img src="/Users/hwei/Documents/Gridea/output/post-images/1564935072155.png" alt=""></p>
+3.选中新下载的swift版本<img src="https://1hwei.github.io//post-images/1564935026303.png" alt="">或者在Xcode偏好设置里选择<br>
+<img src="https://1hwei.github.io//post-images/1564935072155.png" alt=""></p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Xcode模拟器运行提示:Error returned in reply: Connection invalid]]></title>
-        <id>/Users/hwei/Documents/Gridea/output/post/xcode-mo-ni-qi-yun-xing-ti-shi-error-returned-in-reply-connection-invalid/index.html</id>
-        <link href="/Users/hwei/Documents/Gridea/output/post/xcode-mo-ni-qi-yun-xing-ti-shi-error-returned-in-reply-connection-invalid/index.html">
+        <id>https://1hwei.github.io//post/xcode-mo-ni-qi-yun-xing-ti-shi-error-returned-in-reply-connection-invalid</id>
+        <link href="https://1hwei.github.io//post/xcode-mo-ni-qi-yun-xing-ti-shi-error-returned-in-reply-connection-invalid">
         </link>
         <updated>2019-08-03T14:53:55.000Z</updated>
         <content type="html"><![CDATA[<p>#问题:<br>
@@ -91,21 +73,21 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[xcode：出现 Safe Area Layout Guide before ios 9.0 的错]]></title>
-        <id>/Users/hwei/Documents/Gridea/output/post/xcodechu-xian-safe-area-layout-guide-before-ios-90-de-cuo/index.html</id>
-        <link href="/Users/hwei/Documents/Gridea/output/post/xcodechu-xian-safe-area-layout-guide-before-ios-90-de-cuo/index.html">
+        <id>https://1hwei.github.io//post/xcodechu-xian-safe-area-layout-guide-before-ios-90-de-cuo</id>
+        <link href="https://1hwei.github.io//post/xcodechu-xian-safe-area-layout-guide-before-ios-90-de-cuo">
         </link>
         <updated>2019-07-29T08:06:22.000Z</updated>
         <content type="html"><![CDATA[<p>解决办法<br>
 选中控制器，右边面板的Builds for 选择 iOS 9.0 and Later</p>
-<p><img src="/Users/hwei/Documents/Gridea/output/post-images/1564387762657.png" alt="1"></p>
+<p><img src="https://1hwei.github.io//post-images/1564387762657.png" alt="1"></p>
 <p>取消使用 Use Safe Area Layout Guides 选项，去针对不同的设备写代码适配。</p>
-<p><img src="/Users/hwei/Documents/Gridea/output/post-images/1564387788284.png" alt="2"></p>
+<p><img src="https://1hwei.github.io//post-images/1564387788284.png" alt="2"></p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Xcode打开工程出现：Failed to load project at ‘’xxx”,incompatible project version?]]></title>
-        <id>/Users/hwei/Documents/Gridea/output/post/xcode-da-kai-gong-cheng-chu-xian-failed-to-load-project-at-xxxincompatible-project-version/index.html</id>
-        <link href="/Users/hwei/Documents/Gridea/output/post/xcode-da-kai-gong-cheng-chu-xian-failed-to-load-project-at-xxxincompatible-project-version/index.html">
+        <id>https://1hwei.github.io//post/xcode-da-kai-gong-cheng-chu-xian-failed-to-load-project-at-xxxincompatible-project-version</id>
+        <link href="https://1hwei.github.io//post/xcode-da-kai-gong-cheng-chu-xian-failed-to-load-project-at-xxxincompatible-project-version">
         </link>
         <updated>2019-07-23T13:42:41.000Z</updated>
         <content type="html"><![CDATA[<p>错误原因：</p>
@@ -116,8 +98,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>/Users/hwei/Documents/Gridea/output/post/hello-gridea/index.html</id>
-        <link href="/Users/hwei/Documents/Gridea/output/post/hello-gridea/index.html">
+        <id>https://1hwei.github.io//post/hello-gridea</id>
+        <link href="https://1hwei.github.io//post/hello-gridea">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
