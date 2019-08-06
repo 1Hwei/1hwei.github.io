@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1hwei.github.io/</id>
     <title>Gridea</title>
-    <updated>2019-08-06T01:55:56.055Z</updated>
+    <updated>2019-08-06T01:59:07.118Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1hwei.github.io/"/>
     <link rel="self" href="https://1hwei.github.io//atom.xml"/>
@@ -18,7 +18,7 @@
         <updated>2019-08-06T01:47:51.000Z</updated>
         <content type="html"><![CDATA[<p>在hexo根目录下&gt;source/posts下&gt;新建xxx.md文件</p>
 <pre><code>、、、
-标题
+title：标题
 、、、
 
 正文
