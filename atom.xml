@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1hwei.github.io/</id>
     <title>Gridea</title>
-    <updated>2019-08-06T02:00:19.033Z</updated>
+    <updated>2019-08-09T17:08:59.953Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1hwei.github.io/"/>
     <link rel="self" href="https://1hwei.github.io//atom.xml"/>
@@ -10,6 +10,37 @@
     <logo>https://1hwei.github.io//images/avatar.png</logo>
     <icon>https://1hwei.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[<带解决>UIAlertView的iOS9⚠️问题]]></title>
+        <id>https://1hwei.github.io//post/lessdai-jie-jue-greateruialertview-de-ios9wen-ti</id>
+        <link href="https://1hwei.github.io//post/lessdai-jie-jue-greateruialertview-de-ios9wen-ti">
+        </link>
+        <updated>2019-08-09T14:03:31.000Z</updated>
+        <content type="html"><![CDATA[<p>UIAlertView使用方法</p>
+<pre><code>    UIAlertView * alert = [[UIAlertView alloc]initWithTitle:nil message:@&quot;小护只接受原创课程提交哦，么么哒~&quot; delegate:nil  cancelButtonTitle:@&quot;知道了&quot; otherButtonTitles:nil, nil];
+    [alert show];
+</code></pre>
+<pre><code>[[[UIAlertView alloc]initWithTitle:@&quot;你好，老师&quot; message:@&quot;听说你的新贴转发了999次&quot; delegate:nil cancelButtonTitle:@&quot;你懂的&quot; otherButtonTitles:nil, nil]show];
+</code></pre>
+<p>⚠️： 'UIAlertView' is deprecated: first deprecated in iOS 9.0 - UIAlertView is deprecated. Use UIAlertController with a preferredStyle of UIAlertControllerStyleAlert instead<br>
+解决：</p>
+<pre><code>1⃣️：Deoloyment Target 选择8.0
+</code></pre>
+<p>相似扩展1⃣️：有输入框的提示框<br>
+<img src="https://1hwei.github.io//post-images/1565359643246.png" alt=""><br>
+相似扩展2⃣️：UIActionSheet<br>
+<img src="https://1hwei.github.io//post-images/1565360056692.png" alt=""><br>
+相似扩展3⃣️：</p>
+<pre><code>    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@&quot;你传递的信息！&quot; preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@&quot;Ok&quot; style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    }];
+    
+    [alert addAction:action];
+    [self presentViewController:alert animated:YES completion:nil];
+</code></pre>
+<p><img src="https://1hwei.github.io//post-images/1565370515575.gif" alt="gif测试"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[<小知识>hexo搭建的博客如何发博客]]></title>
         <id>https://1hwei.github.io//post/xiaozhishi01</id>
