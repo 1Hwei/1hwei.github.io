@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>问题解决：Module compiled with Swift 4.0.3 cannot be imported by the Swift 4.2.1 | Gridea</title>
+<title>UISlider的使用 | Gridea</title>
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -92,31 +92,55 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">问题解决：Module compiled with Swift 4.0.3 cannot be imported by the Swift 4.2.1</h2>
-            <div class="post-date">2019-08-05</div>
-            
-              <div class="feature-container" style="background-image: url('https://1hwei.github.io//post-images/wen-ti-jie-jue-module-compiled-with-swift-403-cannot-be-imported-by-the-swift-421.png')">
-              </div>
+            <h2 class="post-title">UISlider的使用</h2>
+            <div class="post-date">2019-08-10</div>
             
             <div class="post-content">
-              <p>打开项目报错Module compiled with Swift 4.0.3 cannot be imported by the Swift 4.2.1<br>
-<img src="https://1hwei.github.io//post-images/1564934548491.png" alt=""><br>
-#解决方法：<br>
-切换回swift4.2.4 版本<br>
-1.下载需要的swift4.2.4 <a href="">下载</a>https://swift.org/download/#releases,<br>
-<img src="https://1hwei.github.io//post-images/1564934856433.png" alt=""><br>
-2.安装<br>
-3.选中新下载的swift版本<img src="https://1hwei.github.io//post-images/1564935026303.png" alt="">或者在Xcode偏好设置里选择<br>
-<img src="https://1hwei.github.io//post-images/1564935072155.png" alt=""></p>
+              <pre><code>UISlider * slider = [[UISlider alloc]initWithFrame:CGRectMake(10 , 100, 300, 50)];
+    //01.minimumValue  : 当值可以改变时，滑块可以滑动到最小位置的值，默认为0.0
+    slider.minimumValue = 0.0;
+    
+    //02.maximumValue : 当值可以改变时，滑块可以滑动到最大位置的值，默认为1.0
+    slider.maximumValue = 100.0;
+    
+    //03.当前值
+    slider.value = 50;
+    
+    //04.continuous : 如果设置YES，在拖动滑块的任何时候，滑块的值都会改变。默认设置为YES
+    [slider setContinuous:YES];
+    
+    //05.滑块条最小值处设置的图片，默认为nil
+    slider.minimumValueImage = [UIImage imageNamed:@&quot;001.jpeg&quot;];
+    
+    //06.滑块条最大值处设置的图片，默认为nil
+    slider.maximumValueImage = [UIImage imageNamed:@&quot;001.jpeg&quot;];
+    
+    //07.minimumTrackTintColor : 小于滑块当前值滑块条的颜色，默认为蓝色
+    slider.minimumTrackTintColor = [UIColor redColor];
+    
+    //08.maximumTrackTintColor: 大于滑块当前值滑块条的颜色，默认为白色
+    slider.maximumTrackTintColor = [UIColor blueColor];
+    
+    //09.thumbTintColor : 当前滑块的颜色，默认为白色
+    slider.thumbTintColor = [UIColor yellowColor];
+    
+//    10.currentMaximumTrackImage : 滑块条最大值处设置的图片
+//    11.currentMinimumTrackImage : 滑块条最小值处设置的图片
+//    12.currentThumbImage: 当前滑块的图片
+    
+    [slider addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
+
+</code></pre>
+<p><img src="https://1hwei.github.io//post-images/1565377862963.png" alt=""></p>
 
             </div>
             
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://1hwei.github.io//post/xcode-mo-ni-qi-yun-xing-ti-shi-error-returned-in-reply-connection-invalid">
+                <a href="https://1hwei.github.io//post/lessdai-jie-jue-greateruialertview-de-ios9wen-ti">
                   <h3 class="post-title">
-                    Xcode模拟器运行提示:Error returned in reply: Connection invalid
+                    &lt;带解决&gt;UIAlertView的iOS9⚠️问题
                   </h3>
                 </a>
               </div>
