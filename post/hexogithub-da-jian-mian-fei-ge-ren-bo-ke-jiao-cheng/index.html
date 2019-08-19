@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>&lt;小知识&gt;hexo搭建的博客如何发博客 | Gridea</title>
+<title> hexo+github搭建免费个人博客教程-markdown版 | Gridea</title>
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -92,37 +92,79 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">&lt;小知识&gt;hexo搭建的博客如何发博客</h2>
-            <div class="post-date">2019-08-06</div>
+            <h2 class="post-title"> hexo+github搭建免费个人博客教程-markdown版</h2>
+            <div class="post-date">2019-08-19</div>
             
             <div class="post-content">
-              <p>在hexo根目录下&gt;source/posts下&gt;新建xxx.md文件</p>
-<pre><code>、、、
-title：标题
-、、、
-
-正文
+              <h2 id="1下载软件">1.下载软件</h2>
+<ul>
+<li>安装node.js</li>
+<li>安装git</li>
+</ul>
+<h2 id="2申请github账号">2.申请GitHub账号</h2>
+<h2 id="3安装hexo打开命令行输入">3.安装Hexo，打开命令行，输入</h2>
+<blockquote>
+<p>npm install -g hexo-cli</p>
+</blockquote>
+<p>下载完成后，建议同时安装hexo-deployer-git</p>
+<blockquote>
+<p>npm install hexo-deployer-git --save<br>
+直接执行hexo d的话一般会报如下错误</p>
+</blockquote>
+<p><code>Deployer not found: github 或者 Deployer not found: git</code></p>
+<p>则执行</p>
+<blockquote>
+<p>npm cache clean --force</p>
+</blockquote>
+<p>然后</p>
+<blockquote>
+<p>npm install -g @angular/cli</p>
+</blockquote>
+<h2 id="4一次执行">4.一次执行</h2>
+<pre><code>cd /d/bolg #到目录下
+hexo init  #创建文件夹
+hexo g # 生成
+hexo s # 启动服务
 </code></pre>
-<p>部署，上传</p>
-<pre><code>hexo g -d
+<h2 id="5访问本地博客localhost4000">5，访问<a href="">本地博客</a>localhost:4000</h2>
+<p>图片</p>
+<h2 id="6获取ssh-key">6.获取ssh key</h2>
+<blockquote>
+<p>cd ~/. ssh #检查本机已存在的ssh密钥</p>
+</blockquote>
+<p>如果提示：No such file or directory 说明你是第一次使用git。</p>
+<blockquote>
+<p>ssh-keygen -t rsa -C &quot;邮件地址&quot;</p>
+</blockquote>
+<p>然后连续3次回车，最终会生成一个文件在用户目录下，打开用户目录，找到.ssh\id_rsa.pub文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：名称自己随意填</p>
+<p><code>测试是否成功</code></p>
+<blockquote>
+<p>ssh -T git@github.com # 注意邮箱地址不用改</p>
+</blockquote>
+<p><code>Hi XXX! You've successfully authenticated, but GitHub does not provide shell access.</code></p>
+<p>看到这个信息说明SSH已配置成功！</p>
+<p>此时你还需要配置：</p>
+<pre><code>git config --global user.name &quot;liuxianan&quot;// 你的github用户名，非昵称
+git config --global user.email  &quot;xxx@qq.com&quot;// 填写你的github注册邮箱
+</code></pre>
+<h2 id="7修改_configyml文件">7.修改_config.yml文件</h2>
+<p>theme: landscape改为theme: 你下载好到主题<br>
+language: zh-CN<br>
+repo：粘贴github仓库下的ssh地址</p>
+<pre><code>deploy:
+type: git
+repo: git@github.com:xxx/xxx.github.io.git
+branch: master
 </code></pre>
 
             </div>
             
-              <div class="tag-container">
-                
-                  <a href="https://1hwei.github.io//tag/srQapmL7l" class="tag">
-                    小知识
-                  </a>
-                
-              </div>
-            
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://1hwei.github.io//post/lessdai-ban-shi-jian-greaterru-he-zai-bo-ke-zhong-jia-zai-live2d-dong-man">
+                <a href="https://1hwei.github.io//post/ios-xiang-xi-jie-shi-property-he-synthesize-guan-jian-zi">
                   <h3 class="post-title">
-                    &lt;待办事件&gt;如何在博客中加载live2d动漫
+                    iOS 详细解释@property和@synthesize关键字
                   </h3>
                 </a>
               </div>
