@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1hwei.github.io/</id>
     <title>Gridea</title>
-    <updated>2019-08-19T13:55:08.468Z</updated>
+    <updated>2019-08-20T15:45:21.103Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1hwei.github.io/"/>
     <link rel="self" href="https://1hwei.github.io//atom.xml"/>
@@ -10,6 +10,20 @@
     <logo>https://1hwei.github.io//images/avatar.png</logo>
     <icon>https://1hwei.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[问题：SWIFT_VERSION '5.0' is unsupported, supported versions are: 3.0, 4.0, 4.2. (in target 'XXX')]]></title>
+        <id>https://1hwei.github.io//post/wen-ti-swift_version-50-is-unsupported-supported-versions-are-30-40-42-in-target-xxx</id>
+        <link href="https://1hwei.github.io//post/wen-ti-swift_version-50-is-unsupported-supported-versions-are-30-40-42-in-target-xxx">
+        </link>
+        <updated>2019-08-20T13:59:30.000Z</updated>
+        <content type="html"><![CDATA[<p>##原因<br>
+这个项目是用之前的Swift版本做的，现在用最新版的Xcode打开之后，用的是最新版的Swift5版本进行编译，所以不兼容。<br>
+<img src="https://1hwei.github.io//post-images/1566309758799.png" alt=""><br>
+##解决方法：<br>
+点击主项目-BulidSetting-搜swift-Swift Language Version改成低版本<br>
+<img src="https://1hwei.github.io//post-images/1566309708366.png" alt=""></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ hexo+github搭建免费个人博客教程-markdown版]]></title>
         <id>https://1hwei.github.io//post/hexogithub-da-jian-mian-fei-ge-ren-bo-ke-jiao-cheng</id>
@@ -327,19 +341,6 @@ title：标题
 解决办法:<br>
 1.选中 Xcode cmd + Q 完全退出所有 Xcode 以及模拟器.重新启动.( 简单粗暴快捷)</p>
 <p>2.如果1不行,可以 cmd + shift + K 清理缓存数据 并且 cmd + B 重新编译项目.然后重启 Xcode 与虚拟机</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[xcode：出现 Safe Area Layout Guide before ios 9.0 的错]]></title>
-        <id>https://1hwei.github.io//post/xcodechu-xian-safe-area-layout-guide-before-ios-90-de-cuo</id>
-        <link href="https://1hwei.github.io//post/xcodechu-xian-safe-area-layout-guide-before-ios-90-de-cuo">
-        </link>
-        <updated>2019-07-29T08:06:22.000Z</updated>
-        <content type="html"><![CDATA[<p>解决办法<br>
-选中控制器，右边面板的Builds for 选择 iOS 9.0 and Later</p>
-<p><img src="https://1hwei.github.io//post-images/1564387762657.png" alt="1"></p>
-<p>取消使用 Use Safe Area Layout Guides 选项，去针对不同的设备写代码适配。</p>
-<p><img src="https://1hwei.github.io//post-images/1564387788284.png" alt="2"></p>
 ]]></content>
     </entry>
 </feed>

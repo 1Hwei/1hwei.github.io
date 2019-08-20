@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>xcode：出现 Safe Area Layout Guide before ios 9.0 的错 | Gridea</title>
+<title>问题：SWIFT_VERSION &#39;5.0&#39; is unsupported, supported versions are: 3.0, 4.0, 4.2. (in target &#39;XXX&#39;) | Gridea</title>
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -92,24 +92,28 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">xcode：出现 Safe Area Layout Guide before ios 9.0 的错</h2>
-            <div class="post-date">2019-07-29</div>
+            <h2 class="post-title">问题：SWIFT_VERSION &#39;5.0&#39; is unsupported, supported versions are: 3.0, 4.0, 4.2. (in target &#39;XXX&#39;)</h2>
+            <div class="post-date">2019-08-20</div>
+            
+              <div class="feature-container" style="background-image: url('https://1hwei.github.io//post-images/wen-ti-swift_version-50-is-unsupported-supported-versions-are-30-40-42-in-target-xxx.png')">
+              </div>
             
             <div class="post-content">
-              <p>解决办法<br>
-选中控制器，右边面板的Builds for 选择 iOS 9.0 and Later</p>
-<p><img src="https://1hwei.github.io//post-images/1564387762657.png" alt="1"></p>
-<p>取消使用 Use Safe Area Layout Guides 选项，去针对不同的设备写代码适配。</p>
-<p><img src="https://1hwei.github.io//post-images/1564387788284.png" alt="2"></p>
+              <p>##原因<br>
+这个项目是用之前的Swift版本做的，现在用最新版的Xcode打开之后，用的是最新版的Swift5版本进行编译，所以不兼容。<br>
+<img src="https://1hwei.github.io//post-images/1566309758799.png" alt=""><br>
+##解决方法：<br>
+点击主项目-BulidSetting-搜swift-Swift Language Version改成低版本<br>
+<img src="https://1hwei.github.io//post-images/1566309708366.png" alt=""></p>
 
             </div>
             
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://1hwei.github.io//post/xcode-da-kai-gong-cheng-chu-xian-failed-to-load-project-at-xxxincompatible-project-version">
+                <a href="https://1hwei.github.io//post/hexogithub-da-jian-mian-fei-ge-ren-bo-ke-jiao-cheng">
                   <h3 class="post-title">
-                    Xcode打开工程出现：Failed to load project at ‘’xxx”,incompatible project version?
+                     hexo+github搭建免费个人博客教程-markdown版
                   </h3>
                 </a>
               </div>
