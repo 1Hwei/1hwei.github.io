@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1hwei.github.io/</id>
     <title>Gridea</title>
-    <updated>2019-08-20T15:45:21.103Z</updated>
+    <updated>2019-10-11T05:54:29.492Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1hwei.github.io/"/>
     <link rel="self" href="https://1hwei.github.io//atom.xml"/>
@@ -10,6 +10,45 @@
     <logo>https://1hwei.github.io//images/avatar.png</logo>
     <icon>https://1hwei.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[iOS "NSURLConnection finished with error - code -1022" 问题]]></title>
+        <id>https://1hwei.github.io//post/ios-nsurlconnection-finished-with-error-code-1022-wen-ti</id>
+        <link href="https://1hwei.github.io//post/ios-nsurlconnection-finished-with-error-code-1022-wen-ti">
+        </link>
+        <updated>2019-10-11T05:52:06.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>问题<br>
+在访问一个接口时网络返回error，返回错误码Code = -1022.</li>
+<li>原因<br>
+这是因为iOS9以后，需要APP的网络协议里面都必须使用https协议！这与接口中的http不兼容</li>
+<li>解决<br>
+在工程的plist文件中,新增一个属性<br>
+1.字典 NSAppTransportSecurity<br>
+2.在NSAppTransportSecurity下添加NSAllowsArbitraryLoads类型Boolean,值设为YES<br>
+<img src="https://1hwei.github.io//post-images/1570773261993.png" alt=""></li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sublime Text3 不安装插件设置代码自动缩进对齐]]></title>
+        <id>https://1hwei.github.io//post/sublime-text3-bu-an-zhuang-cha-jian-she-zhi-dai-ma-zi-dong-suo-jin-dui-qi</id>
+        <link href="https://1hwei.github.io//post/sublime-text3-bu-an-zhuang-cha-jian-she-zhi-dai-ma-zi-dong-suo-jin-dui-qi">
+        </link>
+        <updated>2019-08-25T04:36:56.000Z</updated>
+        <content type="html"><![CDATA[<p>在Preferences-&gt;Key Bingdings<br>
+<img src="https://1hwei.github.io//post-images/1566707932410.png" alt=""><br>
+添加代码</p>
+<pre><code>{&quot;keys&quot;: [&quot;ctrl+shift+q&quot;], 
+&quot;command&quot;: &quot;reindent&quot; , 
+&quot;args&quot;:{&quot;single_line&quot;: false}},
+]
+</code></pre>
+<p><img src="https://1hwei.github.io//post-images/1566708075602.png" alt=""><br>
+按cmd +a 全选，后ctrl+shift+q即可自动缩进，整理代码<br>
+效果如下：<br>
+<img src="https://1hwei.github.io//post-images/1566708555088.gif" alt=""></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[问题：SWIFT_VERSION '5.0' is unsupported, supported versions are: 3.0, 4.0, 4.2. (in target 'XXX')]]></title>
         <id>https://1hwei.github.io//post/wen-ti-swift_version-50-is-unsupported-supported-versions-are-30-40-42-in-target-xxx</id>
@@ -307,40 +346,6 @@ title：标题
         </link>
         <updated>2019-08-05T17:33:39.000Z</updated>
         <content type="html"><![CDATA[<p>https://xiazeyu.github.io/</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[问题解决：Module compiled with Swift 4.0.3 cannot be imported by the Swift 4.2.1]]></title>
-        <id>https://1hwei.github.io//post/wen-ti-jie-jue-module-compiled-with-swift-403-cannot-be-imported-by-the-swift-421</id>
-        <link href="https://1hwei.github.io//post/wen-ti-jie-jue-module-compiled-with-swift-403-cannot-be-imported-by-the-swift-421">
-        </link>
-        <updated>2019-08-04T16:01:04.000Z</updated>
-        <content type="html"><![CDATA[<p>打开项目报错Module compiled with Swift 4.0.3 cannot be imported by the Swift 4.2.1<br>
-<img src="https://1hwei.github.io//post-images/1564934548491.png" alt=""><br>
-#解决方法：<br>
-切换回swift4.2.4 版本<br>
-1.下载需要的swift4.2.4 <a href="">下载</a>https://swift.org/download/#releases,<br>
-<img src="https://1hwei.github.io//post-images/1564934856433.png" alt=""><br>
-2.安装<br>
-3.选中新下载的swift版本<img src="https://1hwei.github.io//post-images/1564935026303.png" alt="">或者在Xcode偏好设置里选择<br>
-<img src="https://1hwei.github.io//post-images/1564935072155.png" alt=""></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Xcode模拟器运行提示:Error returned in reply: Connection invalid]]></title>
-        <id>https://1hwei.github.io//post/xcode-mo-ni-qi-yun-xing-ti-shi-error-returned-in-reply-connection-invalid</id>
-        <link href="https://1hwei.github.io//post/xcode-mo-ni-qi-yun-xing-ti-shi-error-returned-in-reply-connection-invalid">
-        </link>
-        <updated>2019-08-03T14:53:55.000Z</updated>
-        <content type="html"><![CDATA[<p>#问题:<br>
-今天在调试项目的时候,运行程序,Xcode提示:Error returned in reply: Connection invalid.<br>
-环境:Xcode10.1 / Xcode7.3<br>
-模拟器:iPhone8(iOS12.1)</p>
-<p>#原因:<br>
-一般出现这样的错误大部分都是系统里装了多个版本的 Xcode. (也有不是的.只是大部分.)或者因为 Xcode 模拟器缓存数据问题.以及长时间没有关机,关闭 Xcode 而导致.<br>
-解决办法:<br>
-1.选中 Xcode cmd + Q 完全退出所有 Xcode 以及模拟器.重新启动.( 简单粗暴快捷)</p>
-<p>2.如果1不行,可以 cmd + shift + K 清理缓存数据 并且 cmd + B 重新编译项目.然后重启 Xcode 与虚拟机</p>
 ]]></content>
     </entry>
 </feed>
