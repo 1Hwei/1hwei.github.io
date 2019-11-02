@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>iOS &#34;NSURLConnection finished with error - code -1022&#34; 问题 | Gridea</title>
+<title>iOS UIAlertAction提示框-Swift | Gridea</title>
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -92,30 +92,39 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">iOS &#34;NSURLConnection finished with error - code -1022&#34; 问题</h2>
-            <div class="post-date">2019-10-11</div>
+            <h2 class="post-title">iOS UIAlertAction提示框-Swift</h2>
+            <div class="post-date">2019-11-02</div>
             
             <div class="post-content">
-              <ul>
-<li>问题<br>
-在访问一个接口时网络返回error，返回错误码Code = -1022.</li>
-<li>原因<br>
-这是因为iOS9以后，需要APP的网络协议里面都必须使用https协议！这与接口中的http不兼容</li>
-<li>解决<br>
-在工程的plist文件中,新增一个属性<br>
-1.字典 NSAppTransportSecurity<br>
-2.在NSAppTransportSecurity下添加NSAllowsArbitraryLoads类型Boolean,值设为YES<br>
-<img src="https://1hwei.github.io//post-images/1570773261993.png" alt=""></li>
-</ul>
+              <pre><code>    @IBAction func button(_ sender: UIButton) {
+        let ac = UIAlertController(title: &quot;提示&quot;, message: &quot;你点击了按钮&quot;, preferredStyle: .alert)
+        let btn = UIAlertAction(title: &quot;好的&quot;, style: UIAlertAction.Style.default, handler: nil)
+        let btn2 = UIAlertAction(title: &quot;取消&quot;, style: .cancel, handler: nil)
+        ac.addAction(btn)
+        ac.addAction(btn2)
+        let btn3 = UIAlertAction(title: &quot;警告&quot;, style: .destructive, handler: nil)
+        ac.addAction(btn3)
+        self.present(ac, animated: true, completion: nil)
+    }
+</code></pre>
+<p>1.iOS UIAlertActionStyle有哪些样式？</p>
+<p>共有3种样式：</p>
+<p>UIAlertAction.Style.default =0    // 默认样式</p>
+<p>UIAlertAction.Style.cancel           // 取消样式</p>
+<p>UIAlertAction.Style.destructive   // 点击按钮为红色</p>
+<blockquote>
+<p>提示：设置两个cancel会崩溃！<br>
+<img src="https://1hwei.github.io//post-images/1572660554131.png" alt=""></p>
+</blockquote>
 
             </div>
             
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://1hwei.github.io//post/sublime-text3-bu-an-zhuang-cha-jian-she-zhi-dai-ma-zi-dong-suo-jin-dui-qi">
+                <a href="https://1hwei.github.io//post/ios-failed-to-instantiate-the-default-view-controller-for-uimainstoryboardfile-main-perhaps-the-designated-entry-point-is-not-set">
                   <h3 class="post-title">
-                    Sublime Text3 不安装插件设置代码自动缩进对齐
+                    iOS-“Failed to instantiate the default view controller for UIMainStoryboardFile &#39;Main&#39; - perhaps the designated entry point is not set?”
                   </h3>
                 </a>
               </div>

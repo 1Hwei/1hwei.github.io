@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1hwei.github.io/</id>
     <title>Gridea</title>
-    <updated>2019-10-15T01:06:55.066Z</updated>
+    <updated>2019-11-02T02:09:22.404Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1hwei.github.io/"/>
     <link rel="self" href="https://1hwei.github.io//atom.xml"/>
@@ -10,6 +10,46 @@
     <logo>https://1hwei.github.io//images/avatar.png</logo>
     <icon>https://1hwei.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[iOS UIAlertAction提示框-Swift]]></title>
+        <id>https://1hwei.github.io//post/ios-uialertaction-ti-shi-kuang-swift</id>
+        <link href="https://1hwei.github.io//post/ios-uialertaction-ti-shi-kuang-swift">
+        </link>
+        <updated>2019-11-02T02:08:01.000Z</updated>
+        <content type="html"><![CDATA[<pre><code>    @IBAction func button(_ sender: UIButton) {
+        let ac = UIAlertController(title: &quot;提示&quot;, message: &quot;你点击了按钮&quot;, preferredStyle: .alert)
+        let btn = UIAlertAction(title: &quot;好的&quot;, style: UIAlertAction.Style.default, handler: nil)
+        let btn2 = UIAlertAction(title: &quot;取消&quot;, style: .cancel, handler: nil)
+        ac.addAction(btn)
+        ac.addAction(btn2)
+        let btn3 = UIAlertAction(title: &quot;警告&quot;, style: .destructive, handler: nil)
+        ac.addAction(btn3)
+        self.present(ac, animated: true, completion: nil)
+    }
+</code></pre>
+<p>1.iOS UIAlertActionStyle有哪些样式？</p>
+<p>共有3种样式：</p>
+<p>UIAlertAction.Style.default =0    // 默认样式</p>
+<p>UIAlertAction.Style.cancel           // 取消样式</p>
+<p>UIAlertAction.Style.destructive   // 点击按钮为红色</p>
+<blockquote>
+<p>提示：设置两个cancel会崩溃！<br>
+<img src="https://1hwei.github.io//post-images/1572660554131.png" alt=""></p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[iOS-“Failed to instantiate the default view controller for UIMainStoryboardFile 'Main' - perhaps the designated entry point is not set?”]]></title>
+        <id>https://1hwei.github.io//post/ios-failed-to-instantiate-the-default-view-controller-for-uimainstoryboardfile-main-perhaps-the-designated-entry-point-is-not-set</id>
+        <link href="https://1hwei.github.io//post/ios-failed-to-instantiate-the-default-view-controller-for-uimainstoryboardfile-main-perhaps-the-designated-entry-point-is-not-set">
+        </link>
+        <updated>2019-10-15T01:04:07.000Z</updated>
+        <content type="html"><![CDATA[<p>问题：Failed to instantiate the default view controller for UIMainStoryboardFile 'Main' - perhaps the designated entry point is not set?<br>
+原因分析：在StoryBoard中没有一个view controller设置了Initial Scene，往往由于删除了最初的ViewVontroller而发生。</p>
+<p>解决方案：在Storyboard中，选择一个view conroller作为story board的第一启动界面。<br>
+<img src="https://1hwei.github.io//post-images/1571101523806.png" alt=""></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[iOS "NSURLConnection finished with error - code -1022" 问题]]></title>
         <id>https://1hwei.github.io//post/ios-nsurlconnection-finished-with-error-code-1022-wen-ti</id>
@@ -319,33 +359,6 @@ branch: master
     [self presentViewController:alert animated:YES completion:nil];
 </code></pre>
 <p><img src="https://1hwei.github.io//post-images/1565370515575.gif" alt="gif测试"></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[<小知识>hexo搭建的博客如何发博客]]></title>
-        <id>https://1hwei.github.io//post/xiaozhishi01</id>
-        <link href="https://1hwei.github.io//post/xiaozhishi01">
-        </link>
-        <updated>2019-08-06T01:47:51.000Z</updated>
-        <content type="html"><![CDATA[<p>在hexo根目录下&gt;source/posts下&gt;新建xxx.md文件</p>
-<pre><code>、、、
-title：标题
-、、、
-
-正文
-</code></pre>
-<p>部署，上传</p>
-<pre><code>hexo g -d
-</code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[<待办事件>如何在博客中加载live2d动漫]]></title>
-        <id>https://1hwei.github.io//post/lessdai-ban-shi-jian-greaterru-he-zai-bo-ke-zhong-jia-zai-live2d-dong-man</id>
-        <link href="https://1hwei.github.io//post/lessdai-ban-shi-jian-greaterru-he-zai-bo-ke-zhong-jia-zai-live2d-dong-man">
-        </link>
-        <updated>2019-08-05T17:33:39.000Z</updated>
-        <content type="html"><![CDATA[<p>https://xiazeyu.github.io/</p>
 ]]></content>
     </entry>
 </feed>

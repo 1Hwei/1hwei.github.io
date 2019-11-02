@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>iOS &#34;NSURLConnection finished with error - code -1022&#34; 问题 | Gridea</title>
+<title>iOS-“Failed to instantiate the default view controller for UIMainStoryboardFile &#39;Main&#39; - perhaps the designated entry point is not set?” | Gridea</title>
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -92,30 +92,23 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">iOS &#34;NSURLConnection finished with error - code -1022&#34; 问题</h2>
-            <div class="post-date">2019-10-11</div>
+            <h2 class="post-title">iOS-“Failed to instantiate the default view controller for UIMainStoryboardFile &#39;Main&#39; - perhaps the designated entry point is not set?”</h2>
+            <div class="post-date">2019-10-15</div>
             
             <div class="post-content">
-              <ul>
-<li>问题<br>
-在访问一个接口时网络返回error，返回错误码Code = -1022.</li>
-<li>原因<br>
-这是因为iOS9以后，需要APP的网络协议里面都必须使用https协议！这与接口中的http不兼容</li>
-<li>解决<br>
-在工程的plist文件中,新增一个属性<br>
-1.字典 NSAppTransportSecurity<br>
-2.在NSAppTransportSecurity下添加NSAllowsArbitraryLoads类型Boolean,值设为YES<br>
-<img src="https://1hwei.github.io//post-images/1570773261993.png" alt=""></li>
-</ul>
+              <p>问题：Failed to instantiate the default view controller for UIMainStoryboardFile 'Main' - perhaps the designated entry point is not set?<br>
+原因分析：在StoryBoard中没有一个view controller设置了Initial Scene，往往由于删除了最初的ViewVontroller而发生。</p>
+<p>解决方案：在Storyboard中，选择一个view conroller作为story board的第一启动界面。<br>
+<img src="https://1hwei.github.io//post-images/1571101523806.png" alt=""></p>
 
             </div>
             
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://1hwei.github.io//post/sublime-text3-bu-an-zhuang-cha-jian-she-zhi-dai-ma-zi-dong-suo-jin-dui-qi">
+                <a href="https://1hwei.github.io//post/ios-nsurlconnection-finished-with-error-code-1022-wen-ti">
                   <h3 class="post-title">
-                    Sublime Text3 不安装插件设置代码自动缩进对齐
+                    iOS &#34;NSURLConnection finished with error - code -1022&#34; 问题
                   </h3>
                 </a>
               </div>
